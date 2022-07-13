@@ -12,22 +12,19 @@ body {
 
 #grid {
     border: 3px black solid;
-    height: 384px;
-    width: 384px;
 }
 
-#square, .square {
+#square {
     background: hsl(246, 22%, 10%);
     border: rgba(20, 20, 20, 0%) 1.4px solid;
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     margin: 0 auto;
     margin-top: 0;
     cursor: pointer;
     display: inline-block;
     float: left;
     transition: 0.1s;
-    flex-shrink: 0;
 }
 
 #square:hover {
