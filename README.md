@@ -1,2 +1,1 @@
-# Etch-a-Sketch
-Etch-a-Sketch project from The Odin Project
+A project to demonstrate skills in CSS Grid.
