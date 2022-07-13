@@ -1,0 +1,50 @@
+html {
+    height: 100vh;
+}
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center
+}
+body {
+    background: hsl(246, 50%, 4%);
+}
+
+#grid {
+    border: 3px black solid;
+    height: 384px;
+    width: 384px;
+}
+
+#square, .square {
+    background: hsl(246, 22%, 10%);
+    border: rgba(20, 20, 20, 0%) 1.4px solid;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 0;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    transition: 0.1s;
+    flex-shrink: 0;
+}
+
+#square:hover {
+    background-color:  hsl(231, 54%, 54%);
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
