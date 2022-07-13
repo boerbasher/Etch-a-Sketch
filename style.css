@@ -7,29 +7,30 @@ body {
     justify-content: center
 }
 body {
-    background: hsl(246, 50%, 4%);
+    background: #110C22;
 }
 
 #grid {
-    border: 3px black solid;
+    border: 3px solid;
+    border-color: #C3DCE5;
 }
 
 #square {
-    background: hsl(246, 22%, 10%);
+    background: #110C22;
     border: rgba(20, 20, 20, 0%) 1.4px solid;
-    width: 32px;
-    height: 32px;
+    width: 16px;
+    height: 16px;
     margin: 0 auto;
     margin-top: 0;
     cursor: pointer;
     display: inline-block;
     float: left;
-    transition: 0.1s;
+    transition: 0.11s;
 }
 
 #square:hover {
-    background-color:  hsl(231, 54%, 54%);
-
+    background-color:  hsl(152, 54%, 54%);
+    cursor: crosshair;
 }
 
 .row {
