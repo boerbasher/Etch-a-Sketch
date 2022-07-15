@@ -4,6 +4,4 @@
 
 3: Add toggable grid.
 
-4: Add small clicky animation when square is pressed.
-
 5: Add image mode, which hides all other elements, including the grid's border, apart from the grid itself.

@@ -2,12 +2,6 @@ let square = document.querySelector('div');
 let mainArea = document.getElementById('container')
 const element = document.getElementsByClassName('h');
 
-let height = '100px';
-let width = '100px';
-/*
-var pad2 = "calc(" + width + " - 90px)";
-*/
-
 
 function removeElementsByClass(className){
     const elements = document.getElementsByClassName('but');
@@ -32,7 +26,6 @@ function makeRow() {
             row.appendChild(square);
         }
         document.getElementById('grid').appendChild(row);
-        let pixelHeight = "calc(" + height + " - 90px)";
         /*square.style.height = pixelHeight;*/
     }
 }
