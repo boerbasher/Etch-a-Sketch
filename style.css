@@ -15,11 +15,11 @@ body {
     border-color: #C3DCE5;
 }
 
+
 #square {
-    background: #110C22;
-    border: rgba(20, 20, 20, 0%) 1.4px solid;
-    width: 16px;
-    height: 16px;
+    border: none;
+    width: 24px;
+    height: 24px;
     margin: 0 auto;
     margin-top: 0;
     cursor: pointer;
@@ -29,8 +29,26 @@ body {
 }
 
 #square:hover {
-    background-color:  hsl(152, 54%, 54%);
+    background-color:  #af9deb !important;
     cursor: crosshair;
+}
+
+#starter-button {
+    text-decoration: none;
+    height: 300px;
+    width: 300px;
+    font-size: 100px;
+    background: none;
+    transition: .3s;
+    border: none;
+    color: #C3DCE5;
+        
+}
+
+
+#starter-button:hover {
+    background: #8674c2;
+    color: black;
 }
 
 .row {
@@ -39,7 +57,7 @@ body {
     width:100%;
 }
 
-.container {
+#container {
     display: flex;
     justify-content: center;
     flex-direction: column;
