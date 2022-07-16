@@ -1,6 +1,6 @@
 let square = document.querySelector('div');
 let mainArea = document.getElementById('container')
-const element = document.getElementsByClassName('h');
+const element = document.getElementById('starter-button')
 
 
 function removeElementsByClass(className){
@@ -14,7 +14,7 @@ function makeRow() {
     let griddy = document.createElement('div');
     conty.appendChild(griddy)
     griddy.setAttribute("id", "grid")
-    removeElementsByClass() 
+    element.remove()
     for (let i = 0; i < 32; i++) {
         const row = document.createElement('div');
         row.className = 'row';
@@ -30,13 +30,23 @@ function makeRow() {
     }
 }
 
-square.addEventListener('mousedown', function (e) {
-    if(e.target.id === 'square'){
-        if (e.target.style.backgroundColor === 'rgb(17, 12, 34)'){
-            e.target.style.backgroundColor = 'rgb(195, 220, 229)';
-        } else {
-            e.target.style.backgroundColor = 'rgb(17, 12, 34)';
-        }
+let scribbling = true
+
+square.addEventListener('mousedown', function(e) {
+    if (scribbling === true) {
+        scribbling = false
+    } else {
+        scribbling = true
+        e.target.style.backgroundColor = 'rgb(195, 220, 229)';
     }
-        
+} )
+
+square.addEventListener('mouseover', function (e) {
+    if (scribbling === true) {
+    if(e.target.id === 'square'){
+            if (e.target.style.backgroundColor === 'rgb(17, 12, 34)'){
+                e.target.style.backgroundColor = 'rgb(195, 220, 229)';
+            }
+    }
+    }
   });
