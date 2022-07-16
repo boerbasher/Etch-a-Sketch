@@ -13,14 +13,16 @@ body {
 #grid {
     border: 3px solid;
     border-color: #C3DCE5;
+    height: 768px;
+    width: 768px;
 }
 
 
 #square {
     border: none;
-    width: 24px;
-    height: 24px;
-    margin: 0 auto;
+    height: 32px;
+    width: 32px;
+    margin: 0;
     margin-top: 0;
     cursor: pointer;
     display: inline-block;
@@ -54,13 +56,8 @@ body {
 .row {
     display: flex;
     justify-content: center;
-    width:100%;
+    flex-grow: 1;
 }
 
-#container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+
 

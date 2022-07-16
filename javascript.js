@@ -10,19 +10,24 @@ function removeElementsByClass(className){
     }
 }
 function makeRow() {
+    let size = 0
+    let count = prompt();
     let conty = document.getElementById('container');
     let griddy = document.createElement('div');
     conty.appendChild(griddy)
     griddy.setAttribute("id", "grid")
-    element.remove()
-    for (let i = 0; i < 32; i++) {
+    element.remove();
+    size = 768 / count;
+    for (let i = 0; i < count; i++) {
         const row = document.createElement('div');
         row.className = 'row';
-        for (let x = 0; x < 32; x++) {
+        for (let x = 0; x < count; x++) {
             let square = document.createElement('div');
             square.className = "square";
             square.setAttribute("id", "square")
             square.style.backgroundColor = 'rgb(17, 12, 34)';
+            square.style.height = size;
+            square.style.width = size;
             row.appendChild(square);
         }
         document.getElementById('grid').appendChild(row);
