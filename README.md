@@ -1,1 +1,1 @@
-A project to demonstrate skills in CSS Grid.
+A project to demonstrate 'skills' in WebDev
