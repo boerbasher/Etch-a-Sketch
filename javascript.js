@@ -2,16 +2,18 @@ let square = document.querySelector('div');
 let mainArea = document.getElementById('container')
 const element = document.getElementById('starter-button')
 
-
 function removeElementsByClass(className){
     const elements = document.getElementsByClassName('but');
     while(elements.length > 0){
         elements[0].parentNode.removeChild(elements[0]);
     }
 }
+
+
 function makeRow() {
     let size = 0
     let count = prompt();
+    if (count > 100) {count = 100};
     let conty = document.getElementById('container');
     let griddy = document.createElement('div');
     conty.appendChild(griddy)
@@ -31,6 +33,7 @@ function makeRow() {
             row.appendChild(square);
         }
         document.getElementById('grid').appendChild(row);
+        conty.appendChild(buttonRestart)
         /*square.style.height = pixelHeight;*/
     }
 }
@@ -55,3 +58,13 @@ square.addEventListener('mouseover', function (e) {
     }
     }
   });
+
+  let buttonRestart = document.createElement('button');
+  buttonRestart.innerHTML = "Hello";
+  buttonRestart.setAttribute("id", "buttonrestart");
+
+buttonRestart.addEventListener("onlick", function (e) {
+    console.log('hi')
+    document.getElementById('grid').innerHTML = '';
+    makeRow();
+})
